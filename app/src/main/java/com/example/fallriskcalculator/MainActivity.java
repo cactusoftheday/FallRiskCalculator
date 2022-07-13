@@ -24,6 +24,9 @@ public class MainActivity extends AppCompatActivity {
         CheckBox curb = findViewById(R.id.curb);
         CheckBox toilet = findViewById(R.id.toilet);
         CheckBox numbness = findViewById(R.id.numbness);
+        CheckBox light_headed_medicine = findViewById(R.id.light_headed_medicine);
+        CheckBox sleep_medicine = findViewById(R.id.sleep_medicine);
+        CheckBox depressed = findViewById(R.id.depressed);
         Button submit = findViewById(R.id.submit);
 
 
@@ -67,6 +70,18 @@ public class MainActivity extends AppCompatActivity {
                 if (numbness.isChecked()) {
                     risk++;
                     numbness.setChecked(false);
+                }
+                if (light_headed_medicine.isChecked()) {
+                    risk++;
+                    light_headed_medicine.setChecked(false);
+                }
+                if (sleep_medicine.isChecked()) {
+                    risk++;
+                    sleep_medicine.setChecked(false);
+                }
+                if (depressed.isChecked()) {
+                    risk++;
+                    depressed.setChecked(false);
                 }
                 AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
                 if (risk == 1) {
