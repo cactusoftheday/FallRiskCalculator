@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Fall Risk Calculator</string>
+
+    <!--Question strings-->
+    <string name="recent_fall">I have fallen in the past year</string>
+    <string name="need_cane">I use or have been advised to use a cane or walker to get around safely.</string>
+    <string name="unsteady">Sometimes I feel unsteady when I am walking.</string>
+    <string name="poor_balance">I steady myself by holding onto furniture when walking at home.</string>
+    <string name="worried">I am worried about falling.</string>
+    <string name="push_from_chair">I need to push with my hands to stand up from a chair.</string>
+    <string name="curb">I have some trouble stepping up onto a curb.</string>
+    <string name="toilet">I often have to rush to the toilet.</string>
+    <string name="numbness">I have lost some feeling in my feet.</string>
+    <string name="light_headed_medicine">I take medicine that sometimes makes me feel light-headed or more tired than usual.</string>
+    <string name="sleep_medicine">I take medicine to help me sleep or improve my mood.</string>
+    <string name="depressed">I often feel sad or depressed.</string>
+
+
+    <!--Why it matters strings-->
+    <string name="recent_fall_why">People who have fallen once are likely to fall again.</string>
+    <string name="need_cane_why">People who have been advised to use a cane or walker may already be more likely to fall.</string>
+    <string name="unsteady_why">Unsteadiness or needing support while walking are signs of poor balance.</string>
+    <string name="poor_balance_why">This is also a sign of poor balance.</string>
+    <string name="worried_why">People who are worried about falling are mor likely to fall.</string>
+    <string name="push_from_chair_why">This is a sign of weak leg muscles, a major reason for falling.</string>
+    <string name="curb_why">This is also a sign of weak leg muscles. </string>
+    <string name="toilet_why">Rushing to the bathroom, especially at night, increases your chance of falling</string>
+    <string name="numbness_why">Numbness in your feet can cause stumbles and lead to falls</string>
+    <string name="light_headed_medicine_why">Side effects from medicines can sometimes increase your chance of falling. </string>
+    <string name="sleep_medicine_why">These medicines can sometimes increase your chance of falling.</string>
+    <string name="depressed_why">Symptoms of depression, such as not feeling well or feeling slowed down, are linked to falls</string>
+</resources>
