@@ -1,15 +1,19 @@
 package com.example.fallriskcalculator;
 
+public class pastMainActivity {
+}
+/*
+package com.example.fallriskcalculator;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 
-public class MainActivity extends AppCompatActivity {
+public class questionaire extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int risk = 0;
                 if (recent_fall.isChecked()) {
-                    risk++;
+                    risk+=2;
                     recent_fall.setChecked(false);
                 }
                 if (need_cane.isChecked()) {
@@ -83,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
                     risk++;
                     depressed.setChecked(false);
                 }
-                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                AlertDialog.Builder builder = new AlertDialog.Builder(questionaire.this);
                 if (risk == 1) {
                     builder.setMessage("The patient has a total of " + Integer.toString(risk) + " risk");
                 } else {
@@ -99,3 +103,4 @@ public class MainActivity extends AppCompatActivity {
 
 
 }
+ */

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- WHEN IS UNCHECKED -->
+    <item android:drawable="@drawable/rounded_rect_unchecked" android:state_checked="false" />
+
+    <!-- WHEN IS CHECKED -->
+    <item android:drawable="@drawable/rounded_rect_checked" android:state_checked="true" />
+</selector>

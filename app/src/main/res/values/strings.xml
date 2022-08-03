@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Fall Risk Calculator</string>
+    <string name="app_name">STEADY Questionaire</string>
 
     <!--Question strings-->
     <string name="recent_fall">I have fallen in the past year</string>
