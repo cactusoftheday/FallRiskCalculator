@@ -54,18 +54,14 @@
                             android:layout_height="wrap_content"
                             android:backgroundTint="#497DFF"
                             android:textSize="32dp"
+                            android:layout_marginRight="20dp"
                             android:paddingLeft="20dp"
                             android:paddingRight="20dp"
-                            android:background="@drawable/toggle_background"
-
-                            android:textColor="@color/white"
+                            android:drawable="@drawable/toggle_background"
                             android:gravity="center"
                             android:text="Yes">
                         </RadioButton>
-                        <View
-                            android:layout_width="65dp"
-                            android:layout_height="4dp"
-                            android:background="@color/white" />
+
                         <RadioButton
                             android:id="@+id/recent_fall_no"
                             android:layout_width="130dp"
@@ -75,16 +71,11 @@
                             android:paddingLeft="20dp"
                             android:paddingRight="20dp"
                             android:checked="true"
-                            android:background="@drawable/toggle_background"
-
-                            android:textColor="@color/white"
                             android:gravity="center"
                             android:text="No">
                         </RadioButton>
                     </RadioGroup>
-
-                    </LinearLayout>
-
+                </LinearLayout>
             </LinearLayout>
             <View
                 android:layout_width="match_parent"
@@ -118,33 +109,38 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:gravity="center">
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/need_cane_yes"
-                        android:layout_width="130dp"
+                    <RadioGroup
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:backgroundTint="#497DFF"
-                        android:textSize="32dp"
-                        android:paddingLeft="20dp"
-                        android:paddingRight="20dp"
-                        android:text="Yes"
-                        android:checkable="true">
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/need_cane_yes"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#497DFF"
+                            android:textSize="32dp"
+                            android:layout_marginRight="20dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:drawable="@drawable/toggle_background"
+                            android:gravity="center"
+                            android:text="Yes">
+                        </RadioButton>
 
-                    </com.google.android.material.button.MaterialButton>
-                    <View
-                        android:layout_width="65dp"
-                        android:layout_height="4dp"
-                        android:background="@color/white" />
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/need_cane_no"
-                        android:layout_width="130dp"
-                        android:layout_height="wrap_content"
-                        android:backgroundTint="#497DFF"
-                        android:textSize="32dp"
-                        android:paddingLeft="20dp"
-                        android:paddingRight="20dp"
-                        android:checkable="true"
-                        android:text="No">
-                    </com.google.android.material.button.MaterialButton>
+                        <RadioButton
+                            android:id="@+id/need_cane_no"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#497DFF"
+                            android:textSize="32dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:text="No">
+                        </RadioButton>
+                    </RadioGroup>
                 </LinearLayout>
             </LinearLayout>
             <View
@@ -179,33 +175,38 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:gravity="center">
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/unsteady_yes"
-                        android:layout_width="130dp"
+                    <RadioGroup
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:backgroundTint="#497DFF"
-                        android:textSize="32dp"
-                        android:paddingLeft="20dp"
-                        android:paddingRight="20dp"
-                        android:checkable="true"
-                        android:text="Yes">
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/unsteady_yes"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#497DFF"
+                            android:textSize="32dp"
+                            android:layout_marginRight="20dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:drawable="@drawable/toggle_background"
+                            android:gravity="center"
+                            android:text="Yes">
+                        </RadioButton>
 
-                    </com.google.android.material.button.MaterialButton>
-                    <View
-                        android:layout_width="65dp"
-                        android:layout_height="4dp"
-                        android:background="@color/white" />
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/unsteady_no"
-                        android:layout_width="130dp"
-                        android:layout_height="wrap_content"
-                        android:backgroundTint="#497DFF"
-                        android:textSize="32dp"
-                        android:paddingLeft="20dp"
-                        android:paddingRight="20dp"
-                        android:checkable="true"
-                        android:text="No">
-                    </com.google.android.material.button.MaterialButton>
+                        <RadioButton
+                            android:id="@+id/unsteady_no"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#497DFF"
+                            android:textSize="32dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:text="No">
+                        </RadioButton>
+                    </RadioGroup>
                 </LinearLayout>
             </LinearLayout>
             <View
@@ -240,33 +241,38 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:gravity="center">
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/poor_balance_yes"
-                        android:layout_width="130dp"
+                    <RadioGroup
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:backgroundTint="#497DFF"
-                        android:textSize="32dp"
-                        android:paddingLeft="20dp"
-                        android:paddingRight="20dp"
-                        android:checkable="true"
-                        android:text="Yes">
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/poor_balance_yes"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#497DFF"
+                            android:textSize="32dp"
+                            android:layout_marginRight="20dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:drawable="@drawable/toggle_background"
+                            android:gravity="center"
+                            android:text="Yes">
+                        </RadioButton>
 
-                    </com.google.android.material.button.MaterialButton>
-                    <View
-                        android:layout_width="65dp"
-                        android:layout_height="4dp"
-                        android:background="@color/white" />
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/poor_balance_no"
-                        android:layout_width="130dp"
-                        android:layout_height="wrap_content"
-                        android:backgroundTint="#497DFF"
-                        android:textSize="32dp"
-                        android:paddingLeft="20dp"
-                        android:paddingRight="20dp"
-                        android:checkable="true"
-                        android:text="No">
-                    </com.google.android.material.button.MaterialButton>
+                        <RadioButton
+                            android:id="@+id/poor_balance_no"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#497DFF"
+                            android:textSize="32dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:text="No">
+                        </RadioButton>
+                    </RadioGroup>
                 </LinearLayout>
             </LinearLayout>
             <View
@@ -301,33 +307,38 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:gravity="center">
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/worried_yes"
-                        android:layout_width="130dp"
+                    <RadioGroup
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:backgroundTint="#497DFF"
-                        android:textSize="32dp"
-                        android:paddingLeft="20dp"
-                        android:paddingRight="20dp"
-                        android:checkable="true"
-                        android:text="Yes">
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/worried_yes"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#497DFF"
+                            android:textSize="32dp"
+                            android:layout_marginRight="20dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:drawable="@drawable/toggle_background"
+                            android:gravity="center"
+                            android:text="Yes">
+                        </RadioButton>
 
-                    </com.google.android.material.button.MaterialButton>
-                    <View
-                        android:layout_width="65dp"
-                        android:layout_height="4dp"
-                        android:background="@color/white" />
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/worried_no"
-                        android:layout_width="130dp"
-                        android:layout_height="wrap_content"
-                        android:backgroundTint="#497DFF"
-                        android:textSize="32dp"
-                        android:paddingLeft="20dp"
-                        android:paddingRight="20dp"
-                        android:checkable="true"
-                        android:text="No">
-                    </com.google.android.material.button.MaterialButton>
+                        <RadioButton
+                            android:id="@+id/worried_no"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#497DFF"
+                            android:textSize="32dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:text="No">
+                        </RadioButton>
+                    </RadioGroup>
                 </LinearLayout>
             </LinearLayout>
             <View
@@ -362,33 +373,38 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:gravity="center">
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/push_from_chair_yes"
-                        android:layout_width="130dp"
+                    <RadioGroup
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:backgroundTint="#497DFF"
-                        android:textSize="32dp"
-                        android:paddingLeft="20dp"
-                        android:paddingRight="20dp"
-                        android:checkable="true"
-                        android:text="Yes">
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/push_from_chair_yes"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#497DFF"
+                            android:textSize="32dp"
+                            android:layout_marginRight="20dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:drawable="@drawable/toggle_background"
+                            android:gravity="center"
+                            android:text="Yes">
+                        </RadioButton>
 
-                    </com.google.android.material.button.MaterialButton>
-                    <View
-                        android:layout_width="65dp"
-                        android:layout_height="4dp"
-                        android:background="@color/white" />
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/push_from_chair_no"
-                        android:layout_width="130dp"
-                        android:layout_height="wrap_content"
-                        android:backgroundTint="#497DFF"
-                        android:textSize="32dp"
-                        android:paddingLeft="20dp"
-                        android:paddingRight="20dp"
-                        android:checkable="true"
-                        android:text="No">
-                    </com.google.android.material.button.MaterialButton>
+                        <RadioButton
+                            android:id="@+id/push_from_chair_no"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#497DFF"
+                            android:textSize="32dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:text="No">
+                        </RadioButton>
+                    </RadioGroup>
                 </LinearLayout>
             </LinearLayout>
             <View
@@ -423,33 +439,38 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:gravity="center">
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/curb_yes"
-                        android:layout_width="130dp"
+                    <RadioGroup
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:backgroundTint="#497DFF"
-                        android:textSize="32dp"
-                        android:paddingLeft="20dp"
-                        android:paddingRight="20dp"
-                        android:checkable="true"
-                        android:text="Yes">
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/curb_yes"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#497DFF"
+                            android:textSize="32dp"
+                            android:layout_marginRight="20dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:drawable="@drawable/toggle_background"
+                            android:gravity="center"
+                            android:text="Yes">
+                        </RadioButton>
 
-                    </com.google.android.material.button.MaterialButton>
-                    <View
-                        android:layout_width="65dp"
-                        android:layout_height="4dp"
-                        android:background="@color/white" />
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/curb_no"
-                        android:layout_width="130dp"
-                        android:layout_height="wrap_content"
-                        android:backgroundTint="#497DFF"
-                        android:textSize="32dp"
-                        android:paddingLeft="20dp"
-                        android:paddingRight="20dp"
-                        android:checkable="true"
-                        android:text="No">
-                    </com.google.android.material.button.MaterialButton>
+                        <RadioButton
+                            android:id="@+id/curb_no"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#497DFF"
+                            android:textSize="32dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:text="No">
+                        </RadioButton>
+                    </RadioGroup>
                 </LinearLayout>
             </LinearLayout>
             <View
@@ -484,33 +505,38 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:gravity="center">
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/toilet_yes"
-                        android:layout_width="130dp"
+                    <RadioGroup
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:backgroundTint="#497DFF"
-                        android:textSize="32dp"
-                        android:paddingLeft="20dp"
-                        android:paddingRight="20dp"
-                        android:checkable="true"
-                        android:text="Yes">
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/toilet_yes"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#497DFF"
+                            android:textSize="32dp"
+                            android:layout_marginRight="20dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:drawable="@drawable/toggle_background"
+                            android:gravity="center"
+                            android:text="Yes">
+                        </RadioButton>
 
-                    </com.google.android.material.button.MaterialButton>
-                    <View
-                        android:layout_width="65dp"
-                        android:layout_height="4dp"
-                        android:background="@color/white" />
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/toilet_no"
-                        android:layout_width="130dp"
-                        android:layout_height="wrap_content"
-                        android:backgroundTint="#497DFF"
-                        android:textSize="32dp"
-                        android:paddingLeft="20dp"
-                        android:paddingRight="20dp"
-                        android:checkable="true"
-                        android:text="No">
-                    </com.google.android.material.button.MaterialButton>
+                        <RadioButton
+                            android:id="@+id/toilet_no"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#497DFF"
+                            android:textSize="32dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:text="No">
+                        </RadioButton>
+                    </RadioGroup>
                 </LinearLayout>
             </LinearLayout>
             <View
@@ -545,33 +571,38 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:gravity="center">
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/numbness_yes"
-                        android:layout_width="130dp"
+                    <RadioGroup
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:backgroundTint="#497DFF"
-                        android:textSize="32dp"
-                        android:paddingLeft="20dp"
-                        android:paddingRight="20dp"
-                        android:checkable="true"
-                        android:text="Yes">
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/numbness_yes"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#497DFF"
+                            android:textSize="32dp"
+                            android:layout_marginRight="20dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:drawable="@drawable/toggle_background"
+                            android:gravity="center"
+                            android:text="Yes">
+                        </RadioButton>
 
-                    </com.google.android.material.button.MaterialButton>
-                    <View
-                        android:layout_width="65dp"
-                        android:layout_height="4dp"
-                        android:background="@color/white" />
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/numbness_no"
-                        android:layout_width="130dp"
-                        android:layout_height="wrap_content"
-                        android:backgroundTint="#497DFF"
-                        android:textSize="32dp"
-                        android:paddingLeft="20dp"
-                        android:paddingRight="20dp"
-                        android:checkable="true"
-                        android:text="No">
-                    </com.google.android.material.button.MaterialButton>
+                        <RadioButton
+                            android:id="@+id/numbness_no"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#497DFF"
+                            android:textSize="32dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:text="No">
+                        </RadioButton>
+                    </RadioGroup>
                 </LinearLayout>
             </LinearLayout>
             <View
@@ -606,33 +637,38 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:gravity="center">
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/light_headed_medicine_yes"
-                        android:layout_width="130dp"
+                    <RadioGroup
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:backgroundTint="#497DFF"
-                        android:textSize="32dp"
-                        android:paddingLeft="20dp"
-                        android:paddingRight="20dp"
-                        android:checkable="true"
-                        android:text="Yes">
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/light_headed_medicine_yes"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#497DFF"
+                            android:textSize="32dp"
+                            android:layout_marginRight="20dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:drawable="@drawable/toggle_background"
+                            android:gravity="center"
+                            android:text="Yes">
+                        </RadioButton>
 
-                    </com.google.android.material.button.MaterialButton>
-                    <View
-                        android:layout_width="65dp"
-                        android:layout_height="4dp"
-                        android:background="@color/white" />
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/light_headed_medicine_no"
-                        android:layout_width="130dp"
-                        android:layout_height="wrap_content"
-                        android:backgroundTint="#497DFF"
-                        android:textSize="32dp"
-                        android:paddingLeft="20dp"
-                        android:paddingRight="20dp"
-                        android:checkable="true"
-                        android:text="No">
-                    </com.google.android.material.button.MaterialButton>
+                        <RadioButton
+                            android:id="@+id/light_headed_medicine_no"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#497DFF"
+                            android:textSize="32dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:text="No">
+                        </RadioButton>
+                    </RadioGroup>
                 </LinearLayout>
             </LinearLayout>
             <View
@@ -668,33 +704,38 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:gravity="center">
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/sleep_medicine_yes"
-                        android:layout_width="130dp"
+                    <RadioGroup
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:backgroundTint="#497DFF"
-                        android:textSize="32dp"
-                        android:paddingLeft="20dp"
-                        android:paddingRight="20dp"
-                        android:checkable="true"
-                        android:text="Yes">
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/sleep_medicine_yes"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#497DFF"
+                            android:textSize="32dp"
+                            android:layout_marginRight="20dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:drawable="@drawable/toggle_background"
+                            android:gravity="center"
+                            android:text="Yes">
+                        </RadioButton>
 
-                    </com.google.android.material.button.MaterialButton>
-                    <View
-                        android:layout_width="65dp"
-                        android:layout_height="4dp"
-                        android:background="@color/white" />
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/sleep_medicine_no"
-                        android:layout_width="130dp"
-                        android:layout_height="wrap_content"
-                        android:backgroundTint="#497DFF"
-                        android:textSize="32dp"
-                        android:paddingLeft="20dp"
-                        android:paddingRight="20dp"
-                        android:checkable="true"
-                        android:text="No">
-                    </com.google.android.material.button.MaterialButton>
+                        <RadioButton
+                            android:id="@+id/sleep_medicine_no"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#497DFF"
+                            android:textSize="32dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:text="No">
+                        </RadioButton>
+                    </RadioGroup>
                 </LinearLayout>
             </LinearLayout>
             <View
@@ -730,33 +771,38 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:gravity="center">
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/depressed_yes"
-                        android:layout_width="130dp"
+                    <RadioGroup
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:backgroundTint="#497DFF"
-                        android:textSize="32dp"
-                        android:paddingLeft="20dp"
-                        android:paddingRight="20dp"
-                        android:checkable="true"
-                        android:text="Yes">
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/depressed_yes"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#497DFF"
+                            android:textSize="32dp"
+                            android:layout_marginRight="20dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:drawable="@drawable/toggle_background"
+                            android:gravity="center"
+                            android:text="Yes">
+                        </RadioButton>
 
-                    </com.google.android.material.button.MaterialButton>
-                    <View
-                        android:layout_width="65dp"
-                        android:layout_height="4dp"
-                        android:background="@color/white" />
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/depressed_no"
-                        android:layout_width="130dp"
-                        android:layout_height="wrap_content"
-                        android:backgroundTint="#497DFF"
-                        android:textSize="32dp"
-                        android:paddingLeft="20dp"
-                        android:paddingRight="20dp"
-                        android:checkable="true"
-                        android:text="No">
-                    </com.google.android.material.button.MaterialButton>
+                        <RadioButton
+                            android:id="@+id/depressed_no"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#497DFF"
+                            android:textSize="32dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:text="No">
+                        </RadioButton>
+                    </RadioGroup>
                 </LinearLayout>
             </LinearLayout>
             <View

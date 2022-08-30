@@ -11,8 +11,6 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
 
-import com.google.android.material.button.MaterialButton;
-
 public class questionaire extends AppCompatActivity {
 
     @Override
@@ -22,17 +20,17 @@ public class questionaire extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.questionaire);
         RadioButton recent_fall = findViewById(R.id.recent_fall_yes);
-        MaterialButton need_cane = findViewById(R.id.need_cane_yes);
-        MaterialButton unsteady = findViewById(R.id.unsteady_yes);
-        MaterialButton poor_balance = findViewById(R.id.poor_balance_yes);
-        MaterialButton worried = findViewById(R.id.worried_yes);
-        MaterialButton push_from_chair = findViewById(R.id.push_from_chair_yes);
-        MaterialButton curb = findViewById(R.id.curb_yes);
-        MaterialButton toilet = findViewById(R.id.toilet_yes);
-        MaterialButton numbness = findViewById(R.id.numbness_yes);
-        MaterialButton light_headed_medicine = findViewById(R.id.light_headed_medicine_yes);
-        MaterialButton sleep_medicine = findViewById(R.id.sleep_medicine_yes);
-        MaterialButton depressed = findViewById(R.id.depressed_yes);
+        RadioButton need_cane = findViewById(R.id.need_cane_yes);
+        RadioButton unsteady = findViewById(R.id.unsteady_yes);
+        RadioButton poor_balance = findViewById(R.id.poor_balance_yes);
+        RadioButton worried = findViewById(R.id.worried_yes);
+        RadioButton push_from_chair = findViewById(R.id.push_from_chair_yes);
+        RadioButton curb = findViewById(R.id.curb_yes);
+        RadioButton toilet = findViewById(R.id.toilet_yes);
+        RadioButton numbness = findViewById(R.id.numbness_yes);
+        RadioButton light_headed_medicine = findViewById(R.id.light_headed_medicine_yes);
+        RadioButton sleep_medicine = findViewById(R.id.sleep_medicine_yes);
+        RadioButton depressed = findViewById(R.id.depressed_yes);
         Button submit = findViewById(R.id.submit);
 
 
@@ -92,9 +90,9 @@ public class questionaire extends AppCompatActivity {
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(questionaire.this);
                 if (risk < 4) {
-                    builder.setMessage("The patient is not at risk of falling.");
+                    builder.setMessage("The patient is not at risk of falling." + risk);
                 } else {
-                    builder.setMessage("The patient is at risk of falling.");
+                    builder.setMessage("The patient is at risk of falling." + risk);
                 }
                 builder.setIcon(getResources().getDrawable(R.drawable.icons8_checkmark_192___));
                 builder.setCancelable(true);
